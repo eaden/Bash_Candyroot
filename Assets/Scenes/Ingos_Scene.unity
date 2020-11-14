@@ -715,6 +715,7 @@ GameObject:
   - component: {fileID: 732612997}
   - component: {fileID: 732612996}
   - component: {fileID: 732612995}
+  - component: {fileID: 732612998}
   m_Layer: 0
   m_Name: ColliderCubeRight
   m_TagString: Untagged
@@ -796,6 +797,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732612993}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &732612998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732612993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2574f1668ac2fa843809aa7486def213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &966832897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1031,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0f113f278703d4fab4faf7fb94ccdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontUp: 0
+  dontRight: 0
+  dontLeft: 0
 --- !u!138 &1110671651
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -1229,6 +1245,7 @@ GameObject:
   - component: {fileID: 1784663623}
   - component: {fileID: 1784663622}
   - component: {fileID: 1784663621}
+  - component: {fileID: 1784663624}
   m_Layer: 0
   m_Name: ColliderCubeLeft
   m_TagString: Untagged
@@ -1310,6 +1327,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784663619}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1784663624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784663619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2574f1668ac2fa843809aa7486def213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2023743797
 GameObject:
   m_ObjectHideFlags: 0

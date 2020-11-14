@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class player_movemend : MonoBehaviour
 {
+       public bool dontUp = false;
+       public bool dontRight = false;
+       public bool dontLeft = false;
         float duckingTimeLimit = 2;
         float duckingTime = 2;
         GameObject childcube;
@@ -26,15 +29,16 @@ public class player_movemend : MonoBehaviour
 
 
         rigi.velocity = new Vector3(rigi.velocity.x, rigi.velocity.y, -2f);
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKeyDown(KeyCode.RightArrow) && !dontRight)
         {
+            
             if (posx < 2)
             {
                 posx = posx + 1f;
                gameObject.transform.position += new Vector3(1.5f, 0f, 0f);
             }
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && !dontLeft)
         {
             if (posx > 0)
             {
@@ -57,7 +61,7 @@ public class player_movemend : MonoBehaviour
            
 
         }
-        if(isDucking == true)
+        if(isDucking == true && !dontUp)
         {
             duckingTime -= Time.deltaTime;
         }
@@ -69,6 +73,7 @@ public class player_movemend : MonoBehaviour
             duckingTime = duckingTimeLimit;
             childcube.SetActive(true);
         }
+
 
     }
        void OnCollisionEnter(Collision other)
