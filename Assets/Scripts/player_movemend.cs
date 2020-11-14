@@ -38,7 +38,7 @@ public class player_movemend : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.UpArrow) && isJumping == false)
         {
-            rigi.AddForce(new Vector3(0f, 15f, 0f),ForceMode.VelocityChange);
+            rigi.AddForce(new Vector3(0f, 8f, 0f),ForceMode.VelocityChange);
             isJumping = true;
         }
         }
@@ -51,12 +51,6 @@ public class player_movemend : MonoBehaviour
 
 
     }
-    void OnTriggerEnter(Collider other)
-    {
-        
-
-        Debug.Log("test");
-
-    }
+   
     }
 
