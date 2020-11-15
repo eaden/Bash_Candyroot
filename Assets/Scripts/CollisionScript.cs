@@ -15,13 +15,42 @@ public class CollisionScript : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        movemendScript.dontRight = true;
+        if (gameObject.name == "ColliderCubeRight")
+        {
+            movemendScript.dontRight = true;
+            Debug.Log("right");
+        }
 
+        if (gameObject.name == "ColliderCubeLeft")
+        {
+            movemendScript.dontLeft = true;
+            Debug.Log("left");
+        }
+
+        if (gameObject.name == "ColliderCubeUp")
+        {
+            movemendScript.dontUp = true;
+            Debug.Log("Up");
+        }
 
     }
     void OnTriggerExit(Collider other)
     {
-        movemendScript.dontRight = false;
+        if (gameObject.name == "ColliderCubeRight")
+        {
+            movemendScript.dontRight = false;
+        }
+
+
+        if (gameObject.name == "ColliderCubeLeft")
+        {
+            movemendScript.dontLeft = false;
+        }
+
+        if (gameObject.name == "ColliderCubeUp")
+        {
+            movemendScript.dontUp = false;
+        }
 
 
     }
