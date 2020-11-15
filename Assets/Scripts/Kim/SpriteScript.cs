@@ -39,10 +39,10 @@ public class SpriteScript : MonoBehaviour
         legTime -= Time.deltaTime;
         if (legTime < 0)
         {
-                legTime = legTimeLimit;
-                legIndex = SpriteIndex(legs, legIndex);
-                sp.sprite = legs[legIndex];
-                sp_arms.sprite = armses[legIndex];
+            legTime = legTimeLimit;
+            legIndex = SpriteIndex(legs, legIndex);
+            sp.sprite = legs[legIndex];
+            sp_arms.sprite = armses[legIndex];
             /*
             }
             else
@@ -53,16 +53,22 @@ public class SpriteScript : MonoBehaviour
             */
 
         }
+        if (player.panik)
+            sp_face.sprite = face[1];
+        else
+            sp_face.sprite = face[0];
         // vorher 0.03
         // dann -0.864
         // dann -0.894
+        /*
         if (player.isDucking)
         {
-            //sp_bodies.sprite = bodies[1];
-            //sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, -0.864f, sp_bodies.gameObject.transform.position.z);
+            sp_bodies.sprite = bodies[1];
+            sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, -0.864f, sp_bodies.gameObject.transform.position.z);
         }
         else
-            //sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, 0.03f, sp_bodies.gameObject.transform.position.z);
+            sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, 0.03f, sp_bodies.gameObject.transform.position.z);
+        */
         if (player.isJumping)
         {
             //sp_bodies.sprite = bodies[2];

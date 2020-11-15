@@ -32,6 +32,12 @@ public class CollisionScript : MonoBehaviour
             movemendScript.dontUp = true;
             
         }
+        if (gameObject.name == "Cube_Vorn")
+        {
+            movemendScript.panik = true;
+
+        }
+        
 
     }
     void OnTriggerExit(Collider other)
@@ -50,6 +56,12 @@ public class CollisionScript : MonoBehaviour
         if (gameObject.name == "ColliderCubeUp")
         {
             movemendScript.dontUp = false;
+        }
+
+        if (gameObject.name == "Cube_Vorn")
+        {
+            movemendScript.panik = false;
+
         }
 
 

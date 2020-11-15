@@ -18,6 +18,22 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene("DasErste");
 
     }
+    public void goto_Ins1()
+    {
+        SceneManager.LoadScene("Instruk1");
+
+    }
+    public void goto_Ins2()
+    {
+        SceneManager.LoadScene("Instruk2");
+
+    }
+    public void goto_Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
     public void goto_endGame()
     {
         Application.Quit();

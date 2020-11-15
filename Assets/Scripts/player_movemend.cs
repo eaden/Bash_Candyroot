@@ -14,6 +14,7 @@ public class player_movemend : MonoBehaviour
        public bool isDucking = false;
         Rigidbody rigi;
         private float posx;
+    public bool panik = false;
     // Start is called before the first frame update
 
 
