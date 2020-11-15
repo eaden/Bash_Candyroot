@@ -59,10 +59,10 @@ public class SpriteScript : MonoBehaviour
         if (player.isDucking)
         {
             sp_bodies.sprite = bodies[1];
-            sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, -0.864f, sp_bodies.gameObject.transform.position.z);
+            //sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, -0.864f, sp_bodies.gameObject.transform.position.z);
         }
         else
-            sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, 0.03f, sp_bodies.gameObject.transform.position.z);
+            //sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, 0.03f, sp_bodies.gameObject.transform.position.z);
         if (player.isJumping)
         {
             sp_bodies.sprite = bodies[2];
