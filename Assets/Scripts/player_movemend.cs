@@ -49,7 +49,7 @@ public class player_movemend : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.UpArrow) && isJumping == false && isDucking == false)
         {
-            rigi.AddForce(new Vector3(0f, 8f, 0f),ForceMode.VelocityChange);
+            rigi.AddForce(new Vector3(0f, 10.5f, 0f),ForceMode.VelocityChange);
             isJumping = true;
         }
         if (Input.GetKeyDown(KeyCode.DownArrow) && isJumping == false && isDucking == false)
