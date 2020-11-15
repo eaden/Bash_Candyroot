@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishScript : MonoBehaviour
 {
@@ -19,8 +20,10 @@ public class FinishScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerTag")
         {
-            Debug.Log("Gewonnen");
-
+            if(gameObject.name == "Level1Finish")
+                SceneManager.LoadScene("NextLevel");
+            else
+                SceneManager.LoadScene("Ende");
         }
 
 

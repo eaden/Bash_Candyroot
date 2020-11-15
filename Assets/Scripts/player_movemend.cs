@@ -15,6 +15,8 @@ public class player_movemend : MonoBehaviour
         Rigidbody rigi;
         private float posx;
     // Start is called before the first frame update
+
+
     void Start()
     {
         childcube = transform.Find("ChildCube").gameObject;
@@ -26,6 +28,10 @@ public class player_movemend : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
 
 
         rigi.velocity = new Vector3(rigi.velocity.x, rigi.velocity.y, -2f);

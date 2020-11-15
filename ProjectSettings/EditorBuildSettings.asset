@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NaechstesLevel 1.unity
     guid: 708bb6044fcc7694d960cee277d7ba83
+  - enabled: 1
+    path: Assets/Scenes/NextLevel.unity
+    guid: f0fde712e2097d5448309ae3ea7532a4
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 7d332bcfeac484f4cb57fb9bf0b2bc3c
   m_configObjects: {}

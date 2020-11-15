@@ -10,8 +10,13 @@ public class ButtonScript : MonoBehaviour
 
     public void goto_startGame()
     {
-        SceneManager.LoadScene("DasErste");
+        SceneManager.LoadScene("Level1");
         
+    }
+    public void goto_zweitesLevel()
+    {
+        SceneManager.LoadScene("DasErste");
+
     }
     public void goto_endGame()
     {

@@ -39,18 +39,18 @@ public class SpriteScript : MonoBehaviour
         legTime -= Time.deltaTime;
         if (legTime < 0)
         {
-            if(!player.isDucking)
-            {
                 legTime = legTimeLimit;
                 legIndex = SpriteIndex(legs, legIndex);
                 sp.sprite = legs[legIndex];
                 sp_arms.sprite = armses[legIndex];
+            /*
             }
             else
             {
                 sp_arms.sprite = null;
                 sp.sprite = null;
             }
+            */
 
         }
         // vorher 0.03
@@ -58,14 +58,14 @@ public class SpriteScript : MonoBehaviour
         // dann -0.894
         if (player.isDucking)
         {
-            sp_bodies.sprite = bodies[1];
+            //sp_bodies.sprite = bodies[1];
             //sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, -0.864f, sp_bodies.gameObject.transform.position.z);
         }
         else
             //sp.gameObject.transform.position = new Vector3(sp_bodies.gameObject.transform.position.x, 0.03f, sp_bodies.gameObject.transform.position.z);
         if (player.isJumping)
         {
-            sp_bodies.sprite = bodies[2];
+            //sp_bodies.sprite = bodies[2];
         }
 
 
