@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VerfolgerScript : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class VerfolgerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerTag")
         {
-            Debug.Log("VERLOREN");
+            SceneManager.LoadScene("Geschleckt"); 
 
         }
 
