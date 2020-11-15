@@ -18,19 +18,19 @@ public class CollisionScript : MonoBehaviour
         if (gameObject.name == "ColliderCubeRight")
         {
             movemendScript.dontRight = true;
-            Debug.Log("right");
+           
         }
 
         if (gameObject.name == "ColliderCubeLeft")
         {
             movemendScript.dontLeft = true;
-            Debug.Log("left");
+          
         }
 
         if (gameObject.name == "ColliderCubeUp")
         {
             movemendScript.dontUp = true;
-            Debug.Log("Up");
+            
         }
 
     }
