@@ -6,20 +6,20 @@ public class VerfolgerScript : MonoBehaviour
 {
     Rigidbody rigiVerfolger;
     GameObject player;
-    float velocity;
+    
 
     
 
     // Start is called before the first frame update
     void Start()
     {
-        player = transform.Find("Player").gameObject;
+        //player = transform.Find("Player").gameObject;
         rigiVerfolger = GetComponent<Rigidbody>();
        
     }
-    void OnCollisionTag(Collider other)
+    void OnTriggerEnter(Collider collision)
     {
-        if (gameObject.name == "Player")
+        if (collision.gameObject.tag == "PlayerTag")
         {
             Debug.Log("VERLOREN");
 
