@@ -10,7 +10,7 @@ public class ButtonScript : MonoBehaviour
 
     public void goto_startGame()
     {
-        SceneManager.LoadScene("Kims_Scene");
+        SceneManager.LoadScene("DasErste");
         
     }
     public void goto_endGame()
