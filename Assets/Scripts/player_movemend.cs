@@ -10,8 +10,8 @@ public class player_movemend : MonoBehaviour
         float duckingTimeLimit = 2;
         float duckingTime = 2;
         GameObject childcube;
-        bool isJumping = false;
-        bool isDucking = false;
+       public bool isJumping = false;
+       public bool isDucking = false;
         Rigidbody rigi;
         private float posx;
     // Start is called before the first frame update
